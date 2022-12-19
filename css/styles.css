@@ -6,14 +6,39 @@
   --light-slate-color: #8E8F99;
   --cornflower-color: #E7E9FC;
   --cloud-color: #F4F4FD;
+  --white-color: #ffffff;
+}
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
 }
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--slate-color);
+  color: var(--slate-color); 
+}
+/* ------TECH-TEGS------ */
+.list{
+  list-style: none;
+  padding: 0;
+  margin: 0 ;
+}
+.link {
+  text-decoration: none;
+}
+.btn {
+  border: 1px solid transparent;
 }
 
  /*---------HEADER-------- */
 
+.container {
+  margin: 0 auto;
+  width: 1152px;
+  padding-left: 15px; padding-right: 15px;
+  outline: 2px solid var(--brand-color);
+}
 .header .logo {
   font-family: Raleway, sans-serif;
   text-transform: uppercase;
@@ -28,6 +53,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue-color);
+}
+.current {
+  color: var(--brand-color);
 }
 .mail {
   font-size: 16px;
@@ -52,16 +80,26 @@ body {
 
 .hero {
   background: var(--navy-blue-color);
+  text-align: center;
 }
 .hero .title {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
-text-align: center;
-letter-spacing: 0.02em;
-color: #FFFFFF;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  margin-bottom: 48px;
 }
-.hero-btn {
+.hero .btn {
+  border-radius: 4px;
+  padding: 16px 32px;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto; 
+
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -69,9 +107,10 @@ color: #FFFFFF;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
-  color: #FFFFFF;
+  color: var(--white-color);
   background-color: var(--brand-color);
   cursor: pointer;
+  
 }
 
 /*---------BENEFITS-------- */
@@ -91,13 +130,17 @@ color: #FFFFFF;
   overflow: hidden;
 }
 .benefits .title {
+  margin-top: 0;
+  margin-bottom: 8px;
   font-weight: 700;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: var(--navy-blue-color);
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
 }
 .benefits .description {
+  margin-top: 0;
+  margin-top: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -108,77 +151,75 @@ color: var(--navy-blue-color);
 
 .services .title {
   font-weight: 700;
-font-size: 36px;
-line-height: 1.1;
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-color: var(--navy-blue-color);
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue-color);
 }
 
 /*------------TEAM------------- */
 
 .team .title {
+  margin-top: 0;
+  margin-bottom: 72px;
   font-weight: 700;
-font-size: 36px;
-line-height: 1.1;
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-color: var(--navy-blue-color);
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue-color);
 }
 .team .employee {
   font-weight: 700;
-font-size: 20px;
-line-height: 1.2;
-text-align: center;
-letter-spacing: 0.02em;
-color: var(--navy-blue-color);
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
 }
 .team .position {
-font-size: 16px;
-line-height: 1.5;
-text-align: center;
-letter-spacing: 0.02em;
-color: var(--slate-color);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--slate-color);
 } 
 
 /* SECOND-PAGE-PORTFOLIO */
 
-
-.filters-list .btn{
-  font-family: inherit;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.5;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.04em;
-color: var(--brand-color);
-background-color: #F4F4FD;
-cursor: pointer;
-}
-.filters-list .filter:hover,
-.filters-list .filter:focus  {
-  color: #FFFFFF;
-  background-color: var(--brand-color);
-}
-
-/*------------PROJECTS------------- */
-
 .projects-list .title {
   font-weight: 700;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: var(--navy-blue-color);
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
 }
 .projects-list .category {
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--slate-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate-color);
+}
+.btn{
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--brand-color);
+  background-color: var(--white-color);
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus  {
+  color: var(--white-color);
+  background-color: var(--brand-color);
 }
 
 /*------------FOOTER------------- */
@@ -189,23 +230,18 @@ color: var(--slate-color);
 .footer .logo {
   font-family: Raleway, sans-serif;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--white-color);
 }
 .footer .title {
   line-height: 1.5;
   letter-spacing: 0.02em;  
-  color: #E7E9FC;
+  color: var(--cornflower-color);
 }
 
-/* ------TECH-TEGS------ */
 
 
-.list{
-  list-style: none;
-}
-.link {
-  text-decoration: none;
-}
+
+
 
 
 
