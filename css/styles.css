@@ -15,10 +15,25 @@ html {
   box-sizing: inherit;
 }
 body {
+  margin: 0;
   font-family: 'Roboto', sans-serif;
   color: var(--slate-color); 
 }
 /* ------TECH-TEGS------ */
+ul,li {
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .list{
   list-style: none;
   padding: 0;
@@ -30,15 +45,17 @@ body {
 .btn {
   border: 1px solid transparent;
 }
+.container {
+  width: 1152px;
+  margin: 0 auto;
+  padding-left: 12px; padding-right: 12px;
+  outline: 2px solid var(--brand-color);
+}
+
 
  /*---------HEADER-------- */
 
-.container {
-  margin: 0 auto;
-  width: 1152px;
-  padding-left: 15px; padding-right: 15px;
-  outline: 2px solid var(--brand-color);
-}
+
 .header .logo {
   font-family: Raleway, sans-serif;
   text-transform: uppercase;
@@ -92,14 +109,13 @@ body {
   color: var(--white-color);
   margin-bottom: 48px;
 }
+/* ------HERO-BTN------ */
 .hero .btn {
   border-radius: 4px;
   padding: 16px 32px;
   display: inline-block;
   margin-right: auto;
   margin-left: auto; 
-
-
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -109,13 +125,16 @@ body {
   letter-spacing: 0.04em;
   color: var(--white-color);
   background-color: var(--brand-color);
+  border: 1px solid transparent;
   cursor: pointer;
-  
 }
 
 /*---------BENEFITS-------- */
 
-
+.benefits {
+  padding-top: 120px;
+  padding-bottom: 0px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -150,6 +169,7 @@ body {
 /*---------SERVICES-------- */
 
 .services .title {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -160,9 +180,10 @@ body {
 }
 
 /*------------TEAM------------- */
-
+.team {
+  background-color: var(--cloud-color);
+}
 .team .title {
-  margin-top: 0;
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
@@ -190,6 +211,12 @@ body {
 
 /* SECOND-PAGE-PORTFOLIO */
 
+.portfolio {
+  padding-top: 96px;
+}
+.filters-list {
+  margin-bottom: 72px;
+}
 .projects-list .title {
   font-weight: 700;
   font-size: 20px;
@@ -203,7 +230,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate-color);
 }
+/* ------FILTER-BTNS------ */
 .btn{
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -213,7 +244,8 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--brand-color);
-  background-color: var(--white-color);
+  background-color: var(--cloud-color);
+  border: 1px solid var(--cornflower-color) ;
   cursor: pointer;
 }
 .btn:hover,
@@ -225,6 +257,7 @@ body {
 /*------------FOOTER------------- */
 
 .footer {
+  padding: 100px 0px;
   background: var(--navy-blue-color);
 }
 .footer .logo {
